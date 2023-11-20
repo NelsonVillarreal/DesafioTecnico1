@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Desafio Técnico 1</title>
+  </head>
+  <body>
+    <h1>Escrivo</h1>
+    <script>
+      var divisiveis3 = 0;
+      var divisiveis5 = 0;
+
+      var valor = prompt("Informe um numero inteiro");
+      valor = parseInt(valor);
+
+      for (i = 0; i < valor; i++) {
+        if (i % 3 === 0) {
+          divisiveis3 += i;
+        }
+        if (i % 5 === 0) {
+          divisiveis5 += i;
+        }
+      }
+      document.write("Somatórios dos Múltiplos de 5 e 3: " + (divisiveis3 + divisiveis5));
+    </script>
+  </body>
+</html>
